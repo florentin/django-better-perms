@@ -7,12 +7,12 @@ from django.core.management import call_command
 from django.db.models import loading
 from django.db import DEFAULT_DB_ALIAS
 from django.contrib.auth.models import User, Group, AnonymousUser
-from better.perms.exceptions import ObjectPermissionException, GuardException
+from better_perms.exceptions import ObjectPermissionException, GuardException
 from .models import Article, ArticlePermission
 from .guards import ArticleGuard
   
 class MixinTestCase(object): # TestCase TransactionTestCase
-    apps = ('better.perms.tests', )
+    apps = ('better_perms.tests', )
     
     def _pre_setup(self):
         # Call the original method that does the fixtures etc.

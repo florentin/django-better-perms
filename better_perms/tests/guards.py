@@ -1,4 +1,4 @@
-from better.perms.guards import DbGuard, Guard
+from better_perms.guards import DbGuard, Guard
 
 class ArticleDbGuard(DbGuard):
     def check_read_obj(self, *args, **kwargs):

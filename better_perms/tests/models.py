@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from django.db import models
-from better.perms.models import CrudPermission
-from better.perms.guards import DbGuard
+from better_perms.models import CrudPermission
+from better_perms.guards import DbGuard
 from .guards import ArticleDbGuard, ArticleGuard
 
 
